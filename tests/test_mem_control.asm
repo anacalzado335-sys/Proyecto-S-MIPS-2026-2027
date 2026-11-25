@@ -6,8 +6,8 @@
 # - j: al menos una vez; jal, jr: procedimiento no hoja guardando $ra en pila; syscall 11 y 10
 
 .data
-word_area: .word 0x11223344
-byte_src:  .byte 0x81, 0x92, 0xA3, 0xB4
+word_area: .word 0x11223344, 0      # 2 palabras: +4 y -4 no pisan byte_src
+byte_src:  .word 0xB4A39281         # bytes 81,92,A3,B4 (little-endian), sin avisos de MARS
 
 .text
 main:
@@ -16,7 +16,6 @@ main:
     li   $t1, 0x12345678
     sw   $t1, 4($t0)        # desplazamiento positivo (+4)
     lw   $s0, 4($t0)
-    sw   $s0, -4($s1)       # usa base desplazada y lee con offset negativo
     addi $t2, $t0, 8
     sw   $t1, -4($t2)       # desplazamiento negativo (-4) sobre word_area+4
     lw   $s1, -4($t2)
