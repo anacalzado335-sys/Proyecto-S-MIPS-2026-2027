@@ -4373,11 +4373,6 @@
       <a name="label" val="ShamExt"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(1590,250)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="rdata1"/>
-      <a name="width" val="32"/>
-    </comp>
     <comp lib="0" loc="(160,1040)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="TTY_DATA"/>
@@ -4390,14 +4385,19 @@
       <a name="label" val="V0is11"/>
       <a name="type" val="output"/>
     </comp>
+    <comp lib="0" loc="(1620,220)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="rdata1"/>
+      <a name="width" val="32"/>
+    </comp>
+    <comp lib="0" loc="(1620,270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="PC"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="0" loc="(1630,320)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="sixteen"/>
-      <a name="width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(1640,240)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="PC"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1680,350)" name="Pin">
@@ -5430,15 +5430,15 @@
     <wire from="(1570,100)" to="(1600,100)"/>
     <wire from="(1580,280)" to="(1580,290)"/>
     <wire from="(1580,290)" to="(1660,290)"/>
-    <wire from="(1590,250)" to="(1600,250)"/>
     <wire from="(160,1040)" to="(190,1040)"/>
-    <wire from="(1600,250)" to="(1600,260)"/>
-    <wire from="(1600,260)" to="(1630,260)"/>
-    <wire from="(1630,260)" to="(1630,280)"/>
+    <wire from="(1620,220)" to="(1640,220)"/>
+    <wire from="(1620,270)" to="(1630,270)"/>
+    <wire from="(1630,270)" to="(1630,280)"/>
     <wire from="(1630,280)" to="(1660,280)"/>
     <wire from="(1630,320)" to="(1650,320)"/>
-    <wire from="(1640,240)" to="(1650,240)"/>
-    <wire from="(1650,240)" to="(1650,270)"/>
+    <wire from="(1640,220)" to="(1640,230)"/>
+    <wire from="(1640,230)" to="(1650,230)"/>
+    <wire from="(1650,230)" to="(1650,270)"/>
     <wire from="(1650,270)" to="(1660,270)"/>
     <wire from="(1650,300)" to="(1650,320)"/>
     <wire from="(1650,300)" to="(1660,300)"/>
